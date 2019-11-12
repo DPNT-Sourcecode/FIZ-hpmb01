@@ -1,6 +1,11 @@
 from solutions.SUM import sum_solution
+import unittest
+from lib.solutions.sum.sum_solution import compute
 
-
-class TestSum():
+class TestSum(unittest.TestCase):
     def test_sum(self):
-        assert sum_solution.compute(1, 2) == 3
+        self.assertEqual(compute(2,3),5)
+
+
+if __name__ == '__main__':
+    unittest.main()
