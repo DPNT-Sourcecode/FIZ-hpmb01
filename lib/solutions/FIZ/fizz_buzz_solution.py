@@ -14,20 +14,23 @@ def fizz_buzz(number):
                 elif lst[0] == i:
                     hasIden = True
             isFizz = (number % 3 == 0 or has3)
-            print(isFizz)
-            if (number % 3 == 0 or has3) and (number % 5 == 0 or has5) and (number >  10 and hasIden):
-                return "fizz buzz Delux"
+            isBuzz = (number % 5 == 0 or has5)
+            isDelux = (number >  10 and hasIden)
 
-            elif (number >  10 and hasIden):
-                return 'Delux'
-            elif (number % 3 == 0 or has3  ) and (number % 5 == 0 or has5):
+            if (isFizz and isBuzz and isDelux):
+                return "fizz buzz delux"
+            elif (isFizz and isBuzz):
                 return "fizz buzz"
-            elif (number % 3 == 0 or has3  ):
+            elif (isFizz  and isDelux):
+                return "fizz delux"
+            elif ( isBuzz and isDelux  ):
+                return 'delux buzz'
+            elif (isFizz):
                 return 'fizz'
-            elif (number % 5 == 0 or has5):
+            elif (isBuzz):
                 return 'buzz'
-            elif (number >  10 and hasIden):
-                return 'Delux'
+            elif (isDelux):
+                return 'delux'
 
             else:
                 return number
@@ -35,6 +38,7 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(9999)
+    test = fizz_buzz(3333)
     print(test)
+
 
