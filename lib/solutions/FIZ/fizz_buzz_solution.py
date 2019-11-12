@@ -13,11 +13,12 @@ def fizz_buzz(number):
                 elif i == 5:
                     has5 = True
 
-            
             isDevisibleBy3 = (number % 3 == 0)
             isDevisibleBy5 = (number % 5 == 0)
             isFizz =  isDevisibleBy3 or has3
             isBuzz = isDevisibleBy5 or has5
+
+            # Deluxe condition
             isDelux = ((isDevisibleBy3 and has3) or (isDevisibleBy5 and has5))
 
             # check whether the number is odd
@@ -56,11 +57,5 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(355)
+    test = fizz_buzz(20)
     print(test)
-
-
-
-
-
-
