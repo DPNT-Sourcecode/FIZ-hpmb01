@@ -1,14 +1,21 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-        print(number % 10)
+
         if number >=1 and number <= 9999:
             lst = [int(i) for i in str(number)]
+            has3 = False
+            has5 = False
+            for i in lst:
+                if i == 3:
+                    has3 = True
+                elif i == 5:
+                    has5 = True
 
-            if (number % 3 == 0 ) and (number % 5 == 0 or number // 10 == 5):
+            if (number % 3 == 0 or has3  ) and (number % 5 == 0 or has5):
                 return "fizz buzz"
-            if number % 3 == 0 or number // 10 == 3:
+            if (number % 3 == 0 or has3  ):
                 return 'fizz'
-            elif number % 5 == 0 or number // 10 == 5:
+            elif (number % 5 == 0 or has5):
                 return 'buzz'
 
             else:
@@ -17,7 +24,8 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(75)
+    test = fizz_buzz(10000)
     print(test)
+
 
 
