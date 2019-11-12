@@ -13,6 +13,7 @@ def fizz_buzz(number):
                     has5 = True
                 elif lst[0] == i:
                     hasIden = True
+            print(lst, hasIden)
             isFizz = (number % 3 == 0 or has3)
             isBuzz = (number % 5 == 0 or has5)
             isDelux = (number >  10 and hasIden)
@@ -40,5 +41,6 @@ def fizz_buzz(number):
 if __name__ == '__main__':
     test = fizz_buzz(3333)
     print(test)
+
 
 
