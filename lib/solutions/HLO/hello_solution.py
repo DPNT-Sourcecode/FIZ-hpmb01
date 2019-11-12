@@ -11,5 +11,3 @@ def hello(friend_name):
 '''if __name__ == '__main__':
     test = hello("John")
     print(test)'''
-
-
