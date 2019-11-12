@@ -13,11 +13,16 @@ def fizz_buzz(number):
                     has5 = True
                 elif lst[0] == i:
                     hasIden = True
+            isFizz = (number % 3 == 0 or has3)
+            print(isFizz)
             if (number % 3 == 0 or has3) and (number % 5 == 0 or has5) and (number >  10 and hasIden):
                 return "fizz buzz Delux"
-            if (number % 3 == 0 or has3  ) and (number % 5 == 0 or has5):
+
+            elif (number >  10 and hasIden):
+                return 'Delux'
+            elif (number % 3 == 0 or has3  ) and (number % 5 == 0 or has5):
                 return "fizz buzz"
-            if (number % 3 == 0 or has3  ):
+            elif (number % 3 == 0 or has3  ):
                 return 'fizz'
             elif (number % 5 == 0 or has5):
                 return 'buzz'
@@ -29,6 +34,7 @@ def fizz_buzz(number):
         else:
             return number
 
-'''if __name__ == '__main__':
+if __name__ == '__main__':
     test = fizz_buzz(9999)
-    print(test)'''
+    print(test)
+
