@@ -2,6 +2,8 @@
 def fizz_buzz(number):
 
         if number >=1 and number <= 9999:
+            if (number % 3 == 0 or number // 10 == 3) and (number % 5 == 0 or number // 10 == 5):
+                return "fizz buzz"
             if number % 3 == 0 or number // 10 == 3:
                 return 'fizz'
             elif number % 5 == 0 or number // 10 == 5:
@@ -13,8 +15,9 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(35)
+    test = fizz_buzz(75)
     print(test)
+
 
 
 
