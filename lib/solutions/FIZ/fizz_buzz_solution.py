@@ -1,19 +1,23 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-
+        has3 = False
+        has5 = False
+        hasIden = False
         if number >=1 and number <= 9999:
             lst = [int(i) for i in str(number)]
-            has3 = False
-            has5 = False
-            hasIden = False
+
             for i in lst:
                 if i == 3:
                     has3 = True
                 elif i == 5:
                     has5 = True
-                elif lst[0] == i:
-                    hasIden = True
-            print(lst, hasIden)
+            for j in lst:
+               if(j == lst[0]):
+                   hasIden = True
+               else:
+                    hasIden = False
+
+
             isFizz = (number % 3 == 0 or has3)
             isBuzz = (number % 5 == 0 or has5)
             isDelux = (number >  10 and hasIden)
@@ -39,8 +43,9 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(3333)
+    test = fizz_buzz(22)
     print(test)
+
 
 
 
