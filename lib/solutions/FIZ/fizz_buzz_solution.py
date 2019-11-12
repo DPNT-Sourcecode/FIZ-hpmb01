@@ -29,22 +29,20 @@ def fizz_buzz(number):
                 isOdd = True
             else:
                 isOdd = False
-            if (isFizz and isBuzz):
-                if(isOdd and isDelux):
+            if (isFizz and isBuzz and isDelux):
+                if isOdd:
                     return "fizz buzz fake deluxe"
                 else:
                     return "fizz buzz deluxe"
             elif (isFizz and isBuzz):
                 return "fizz buzz"
-            elif (isFizz):
-                if (isOdd and isDelux):
+            elif (isFizz and isDelux):
+                if (isOdd):
                     return "fizz fake deluxe"
                 else:
                     return "fizz deluxe"
-            elif ( isBuzz):
-                print(isDelux)
-                print(isOdd)
-                if(isOdd and isDelux):
+            elif (isBuzz and isDelux):
+                if(isOdd):
                     return 'buzz fake deluxe'
                 else:
                     return 'buzz deluxe'
@@ -65,11 +63,5 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(550)
+    test = fizz_buzz(55)
     print(test)
-
-
-
-
-
-
