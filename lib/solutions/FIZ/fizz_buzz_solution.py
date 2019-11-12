@@ -19,9 +19,6 @@ def fizz_buzz(number):
                     hasIden = False
                     break
 
-            print(hasIden)
-
-
             isFizz = (number % 3 == 0 or has3)
             isBuzz = (number % 5 == 0 or has5)
             isDelux = (number >  10 and hasIden)
@@ -36,12 +33,21 @@ def fizz_buzz(number):
                     return "fizz buzz deluxe"
             elif (isFizz and isBuzz):
                 return "fizz buzz"
-            elif (isFizz  and isDelux):
-                return "fizz deluxe"
-            elif ( isBuzz and isDelux  ):
-                return 'buzz deluxe'
+            elif (isFizz):
+                if (isOdd and isDelux):
+                    return "fizz fake deluxe"
+                else:
+                    return "fizz deluxe"
+            elif ( isBuzz):
+                if(isOdd and isDelux):
+                    return 'buzz fake deluxe'
+                else:
+                    return 'buzz deluxe'
             elif (isDelux):
-                return 'deluxe'
+                if(isOdd):
+                    return 'fake deluxe'
+                else:
+                    return 'deluxe'
             elif (isFizz):
                 return 'fizz'
             elif (isBuzz):
@@ -54,8 +60,9 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(555)
+    test = fizz_buzz(550)
     print(test)
+
 
 
 
