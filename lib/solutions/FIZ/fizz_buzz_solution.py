@@ -13,7 +13,8 @@ def fizz_buzz(number):
         else:
             return number
 
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     test = fizz_buzz(15)
-    print(test)
+    print(test)'''
+
 
