@@ -13,14 +13,7 @@ def fizz_buzz(number):
                 elif i == 5:
                     has5 = True
 
-            # check whether the number is identical
-            '''for j in lst:
-               if(j == lst[0]):
-                   hasIden = True
-               else:
-                    hasIden = False
-                    break'''
-
+            
             isDevisibleBy3 = (number % 3 == 0)
             isDevisibleBy5 = (number % 5 == 0)
             isFizz =  isDevisibleBy3 or has3
@@ -63,8 +56,9 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(243)
+    test = fizz_buzz(355)
     print(test)
+
 
 
 
