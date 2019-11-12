@@ -14,16 +14,16 @@ def fizz_buzz(number):
                     has5 = True
 
             # check whether the number is identical
-            for j in lst:
+            '''for j in lst:
                if(j == lst[0]):
                    hasIden = True
                else:
                     hasIden = False
-                    break
+                    break'''
 
             isFizz = (number % 3 == 0 or has3)
             isBuzz = (number % 5 == 0 or has5)
-            isDelux = (number >  10 and hasIden)
+            isDelux = isFizz or isBuzz
 
             # check whether the number is odd
             if(number % 2 != 0):
@@ -63,6 +63,7 @@ def fizz_buzz(number):
 if __name__ == '__main__':
     test = fizz_buzz(999)
     print(test)
+
 
 
 
