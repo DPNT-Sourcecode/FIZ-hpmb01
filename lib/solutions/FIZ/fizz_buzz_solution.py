@@ -1,11 +1,10 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-       
+        print(number % 10)
         if number >=1 and number <= 9999:
-            lst = [int[i] for i in str(number)]
-            print(lst)
+            lst = [int(i) for i in str(number)]
 
-            '''if (number % 3 == 0 ) and (number % 5 == 0 or number // 10 == 5):
+            if (number % 3 == 0 ) and (number % 5 == 0 or number // 10 == 5):
                 return "fizz buzz"
             if number % 3 == 0 or number // 10 == 3:
                 return 'fizz'
@@ -15,9 +14,10 @@ def fizz_buzz(number):
             else:
                 return number
         else:
-            return number'''
+            return number
 
 if __name__ == '__main__':
     test = fizz_buzz(75)
     print(test)
+
 
