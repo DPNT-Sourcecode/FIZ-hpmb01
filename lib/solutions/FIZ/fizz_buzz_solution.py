@@ -23,9 +23,10 @@ def fizz_buzz(number):
         else:
             return number
 
-if __name__ == '__main__':
-    test = fizz_buzz(10000)
-    print(test)
+'''if __name__ == '__main__':
+    test = fizz_buzz(9999)
+    print(test)'''
+
 
 
 
