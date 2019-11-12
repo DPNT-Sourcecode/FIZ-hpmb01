@@ -2,7 +2,7 @@
 def fizz_buzz(number):
 
         if number >=1 and number <= 9999:
-            if number % 3 == 0 and number % 5 == 0:
+            if number % 3 == 0 or number % 5 == 0:
                 return 'fizz buzz'
             elif number % 3 == 0:
                 return 'fizz'
@@ -16,5 +16,6 @@ def fizz_buzz(number):
 '''if __name__ == '__main__':
     test = fizz_buzz(15)
     print(test)'''
+
 
 
