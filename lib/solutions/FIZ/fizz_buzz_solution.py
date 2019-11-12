@@ -47,13 +47,5 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(33)
+    test = fizz_buzz(222)
     print(test)
-
-
-
-
-
-
-
-
