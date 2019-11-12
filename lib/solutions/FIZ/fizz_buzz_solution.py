@@ -21,9 +21,11 @@ def fizz_buzz(number):
                     hasIden = False
                     break'''
 
-            isFizz = (number % 3 == 0 or has3)
-            isBuzz = (number % 5 == 0 or has5)
-            isDelux = isFizz or isBuzz
+            isDevisibleBy3 = (number % 3 == 0)
+            isDevisibleBy5 = (number % 5 == 0)
+            isFizz =  isDevisibleBy3 or has3
+            isBuzz = isDevisibleBy5 or has5
+            isDelux = ((isDevisibleBy3 and has3) or (isDevisibleBy5 and has5))
 
             # check whether the number is odd
             if(number % 2 != 0):
@@ -61,8 +63,9 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(999)
+    test = fizz_buzz(243)
     print(test)
+
 
 
 
