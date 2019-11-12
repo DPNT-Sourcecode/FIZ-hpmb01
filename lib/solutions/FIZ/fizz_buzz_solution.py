@@ -23,19 +23,19 @@ def fizz_buzz(number):
             isDelux = (number >  10 and hasIden)
 
             if (isFizz and isBuzz and isDelux):
-                return "fizz buzz delux"
+                return "fizz buzz deluxe"
             elif (isFizz and isBuzz):
                 return "fizz buzz"
             elif (isFizz  and isDelux):
-                return "fizz delux"
+                return "fizz deluxe"
             elif ( isBuzz and isDelux  ):
-                return 'delux buzz'
+                return 'deluxe buzz'
             elif (isFizz):
                 return 'fizz'
             elif (isBuzz):
                 return 'buzz'
             elif (isDelux):
-                return 'delux'
+                return 'deluxe'
 
             else:
                 return number
@@ -45,6 +45,7 @@ def fizz_buzz(number):
 '''if __name__ == '__main__':
     test = fizz_buzz(10)
     print(test)'''
+
 
 
 
