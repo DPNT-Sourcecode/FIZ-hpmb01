@@ -10,5 +10,3 @@ def compute(x, y):
     except Exception as e:
             return e
 
-
-
