@@ -1,3 +1,13 @@
 # noinspection PyShadowingBuiltins,PyUnusedLocal
 def compute(x, y):
-    raise NotImplementedError()
+
+
+    try:
+        if (x > = 0 and x <= 100) and (y > = 0 and y <= 100):
+            return x+y
+        else :
+            return f"Values are out of range")
+    except Exception as e:
+            return e
+
+
