@@ -37,33 +37,32 @@ def fizz_buzz(number):
             elif (isFizz and isBuzz):
                 return "fizz buzz"
             elif (isFizz and isDelux):
-                if (isOdd):
+                if isOdd:
                     return "fizz fake deluxe"
                 else:
                     return "fizz deluxe"
             elif (isBuzz and isDelux):
-                if(isOdd):
+                if isOdd:
                     return 'buzz fake deluxe'
                 else:
                     return 'buzz deluxe'
             elif (isDelux):
-                if(isOdd):
+                if isOdd:
                     return 'fake deluxe'
                 else:
                     return 'deluxe'
-            elif (isFizz):
+            elif isFizz:
                 return 'fizz'
-            elif (isBuzz):
+            elif isBuzz:
                 return 'buzz'
-
-
             else:
                 return number
         else:
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(35)
+    test = fizz_buzz(999)
     print(test)
+
 
 
