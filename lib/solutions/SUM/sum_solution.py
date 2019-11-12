@@ -11,4 +11,6 @@ def compute(x, y):
         return e
 
 
-if __name__ == '__main__'
+'''if __name__ == '__main__':
+    sum = compute(2,3)
+    print(sum)'''
