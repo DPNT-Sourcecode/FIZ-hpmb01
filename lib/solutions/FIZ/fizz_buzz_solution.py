@@ -16,6 +16,9 @@ def fizz_buzz(number):
                    hasIden = True
                else:
                     hasIden = False
+                    break
+
+            print(hasIden)
 
 
             isFizz = (number % 3 == 0 or has3)
@@ -27,7 +30,7 @@ def fizz_buzz(number):
             elif (isFizz and isBuzz):
                 return "fizz buzz"
             elif (isFizz  and isDelux):
-                return "deluxe fizz"
+                return "fizz deluxe"
             elif ( isBuzz and isDelux  ):
                 return 'deluxe buzz'
             elif (isDelux):
@@ -43,9 +46,10 @@ def fizz_buzz(number):
         else:
             return number
 
-'''if __name__ == '__main__':
-    test = fizz_buzz(10)
-    print(test)'''
+if __name__ == '__main__':
+    test = fizz_buzz(33)
+    print(test)
+
 
 
 
