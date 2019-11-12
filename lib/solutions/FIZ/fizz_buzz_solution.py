@@ -12,6 +12,8 @@ def fizz_buzz(number):
                     has3 = True
                 elif i == 5:
                     has5 = True
+
+            # check whether the number is identical
             for j in lst:
                if(j == lst[0]):
                    hasIden = True
@@ -23,10 +25,9 @@ def fizz_buzz(number):
             isBuzz = (number % 5 == 0 or has5)
             isDelux = (number >  10 and hasIden)
 
-            if(isDelux and (number % 2 != 0)):
+            # check whether the number is odd
+            if(number % 2 != 0):
                 isOdd = True
-            
-
 
             if (isFizz and isBuzz and isDelux):
                 if isOdd:
@@ -62,6 +63,7 @@ def fizz_buzz(number):
             return number
 
 if __name__ == '__main__':
-    test = fizz_buzz(777)
+    test = fizz_buzz(35)
     print(test)
+
 
