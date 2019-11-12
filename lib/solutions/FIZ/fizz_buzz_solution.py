@@ -17,10 +17,3 @@ def fizz_buzz(number):
 if __name__ == '__main__':
     test = fizz_buzz(75)
     print(test)
-
-
-
-
-
-
-
